@@ -1,1 +1,9 @@
 {% extends "base.html" %}
+
+{% block content %}
+    {% for d in data %}
+        {{d.number}}
+        {{d.string}}
+        <br/>
+    {% endfor %}
+{% endblock content %}
